@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>メインメニュー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="button-container">
+    <button id="discordLoginBtn" onclick="window.location.href='/login'" class="discord-button">Discordでログイン</button>
+    <button onclick="goToSettings()" class="normal-button">Botの設定</button>
+    <button onclick="window.open('https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot','_blank')" class="normal-button">Botを招待する</button>
+  </div>
+
+<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+<div id="sideMenu" class="side-menu">
+  <div class="close-button" onclick="toggleMenu()">&laquo;</div> <!-- ← これが≪ -->
+  <div id="serverList">サーバー読み込み中...</div>
+</div>
+  <!-- 右上のアイコンと並べるコンテナ -->
+<div class="top-right-controls" style="display:none;" id="userControls">
+    <img id="userIcon" src="" alt="User Icon" />
+    <button id="logoutBtn" class="logout-button">→</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

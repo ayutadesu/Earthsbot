@@ -1,0 +1,142 @@
+{
+  "1388130801488498828": {
+    "899160018337796147": {
+      "coins": -3000,
+      "lastDaily": 1751343714913,
+      "dailyStreak": 2,
+      "gamesPlayed": 1,
+      "totalWinnings": 0,
+      "totalLosses": 60000
+    },
+    "1093134961424474194": {
+      "coins": 3000,
+      "lastDaily": 1751211425899,
+      "dailyStreak": 3,
+      "gamesPlayed": 1,
+      "totalWinnings": 3125,
+      "totalLosses": 0
+    },
+    "793051008326565909": {
+      "coins": -7000,
+      "lastDaily": 1751553161159,
+      "dailyStreak": 1,
+      "gamesPlayed": 1,
+      "totalWinnings": 2423,
+      "totalLosses": 0
+    },
+    "1093012308512473160": {
+      "coins": 14500,
+      "lastDaily": 1751679616227,
+      "dailyStreak": 1,
+      "gamesPlayed": 0,
+      "totalWinnings": 0,
+      "totalLosses": 0
+    },
+    "1353476744262451233": {
+      "coins": 120000,
+      "lastDaily": 0,
+      "dailyStreak": 0,
+      "gamesPlayed": 0,
+      "totalWinnings": 0,
+      "totalLosses": 0
+    },
+    "1086983558305943614": {
+      "coins": 27000,
+      "lastDaily": 1751968758725,
+      "dailyStreak": 2,
+      "gamesPlayed": 0,
+      "totalWinnings": 0,
+      "totalLosses": 0
+    },
+    "1341883555760050227": {
+      "coins": -360000,
+      "lastDaily": 0,
+      "dailyStreak": 0,
+      "gamesPlayed": 0,
+      "totalWinnings": 0,
+      "totalLosses": 0
+    },
+    "inventory": {
+      "android-baunty-5500": [],
+      "ios-baunty-3800": [],
+      "ios-baunty-4300": [],
+      "ios-baunty-5300": [],
+      "proseka-10-12": [],
+      "proseka-13-15": [],
+      "proseka-15-17": [],
+      "monsuto-700-1000": [],
+      "monsuto-1000-1300": [],
+      "monsuto-1200-1500": []
+    },
+    "510078561038893066": {
+      "coins": 180000,
+      "lastDaily": 1751079156690,
+      "dailyStreak": 1,
+      "gamesPlayed": 0,
+      "totalWinnings": 0,
+      "totalLosses": 0
+    },
+    "357491691302813696": {
+      "coins": 6000,
+      "lastDaily": 1751867736893,
+      "dailyStreak": 1,
+      "gamesPlayed": 0,
+      "totalWinnings": 0,
+      "totalLosses": 0
+    }
+  },
+  "1369371367971094534": {
+    "820201681412685874": {
+      "coins": -6755084,
+      "lastDaily": 0,
+      "dailyStreak": 0,
+      "gamesPlayed": 0,
+      "totalWinnings": 0,
+      "totalLosses": 0
+    },
+    "1180510196313899020": {
+      "coins": 3000,
+      "lastDaily": 1751116461262,
+      "dailyStreak": 1,
+      "gamesPlayed": 0,
+      "totalWinnings": 0,
+      "totalLosses": 0
+    },
+    "inventory": {
+      "android-baunty-5500": [],
+      "ios-baunty-3800": [],
+      "ios-baunty-4300": [],
+      "ios-baunty-5300": [],
+      "proseka-10-12": [],
+      "proseka-13-15": [],
+      "proseka-15-17": [],
+      "monsuto-700-1000": [],
+      "monsuto-1000-1300": [],
+      "monsuto-1200-1500": [],
+      "custom-1751230237262-0bgis1btc": [
+        {
+          "content": "あ",
+          "addedAt": 1751230237262
+        }
+      ]
+    }
+  },
+  "1260851227080790047": {
+    "357491691302813696": {
+      "coins": 0,
+      "lastDaily": 1751425467787,
+      "dailyStreak": 1,
+      "gamesPlayed": 0,
+      "totalWinnings": 0,
+      "totalLosses": 0
+    },
+    "827430209539276800": {
+      "coins": -3000,
+      "lastDaily": 1751451029968,
+      "dailyStreak": 1,
+      "gamesPlayed": 0,
+      "totalWinnings": 0,
+      "totalLosses": 0
+    }
+  }
+}

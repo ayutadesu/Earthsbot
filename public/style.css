@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(270deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% 200%;
+  animation: gradientMove 15s ease infinite;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* グラデーションアニメーション */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Discordボタン風 */
+.discord-button {
+  background-color: #5865F2;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  margin: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.discord-button:hover {
+  background-color: #4752c4;
+}
+
+/* 通常ボタン */
+.normal-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 15px;
+  font-size: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.normal-button:hover {
+  background-color: #555;
+}
+
+/* トグルスイッチ（iPhone風） */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {display: none;}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px; width: 26px;
+  left: 4px; bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* ボタン配置 */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -350px; /* 横幅UP */
+  width: 350px; /* ←横幅広げる */
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  color: white;
+  transition: left 0.3s ease;
+  padding: 25px; /* 余白も少し増やす */
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.side-menu.show {
+  left: 0;
+}
+
+/* サーバーリストだけスクロール */
+#serverList {
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+/* サーバー1個あたりの表示 */
+.server-item {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* アイコンと名前の間隔広げる */
+  margin-bottom: 15px; /* サーバー間スペースUP */
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.server-item:hover {
+  background: rgba(255, 255, 255, 0.1); /* ホバー時ほんのり光る */
+}
+
+.server-item img {
+  width: 60px; /* ← アイコン大きく */
+  height: 60px;
+  border-radius: 12px; /* 角丸も大きく */
+}
+
+.server-item span {
+  font-size: 18px; /* サーバー名大きく */
+  font-weight: bold;
+}
+
+/* 三本線メニュー */
+.menu-icon {
+  width: 100px;
+  height: 100px;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  border-radius: 8px;
+  z-index: 1100;
+  cursor: pointer;
+}
+
+/* 閉じるボタン（≪） */
+.close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  font-size: 60px;
+  background: rgba(0, 255, 255, 0.3);
+  border: 2px solid #00ffff;
+  border-radius: 50%;             /* ← 完全丸ボタン */
+  color: #00ffff;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform 0.1s ease, box-shadow 0.2s ease; /* これ重要 */
+  box-sizing: border-box;         /* paddingも含めて制御 */
+}
+
+/* ホバー時：光る */
+.close-button:hover {
+  box-shadow: 0 0 15px #00ffff;
+}
+
+/* クリック時：キュッと縮む */
+.close-button:active {
+  transform: scale(0.8); /* ← 80%に縮む（確実） */
+}
+
+/* 右上コンテナ */
+.top-right-controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1200;
+}
+
+/* ユーザーアイコン */
+#userIcon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* ログアウトボタン */
+.logout-button {
+  width: 100px;
+  height: 100px;
+  background-color: #ff5555;
+  border: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;  /* 真四角 */
+  transition: background-color 0.2s ease;
+}
+
+/* ホバーで少し濃く */
+.logout-button:hover {
+  background-color: #ff2222;
+}
+
+.menu-icon.hide {
+  display: none;
+}
