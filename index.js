@@ -156,7 +156,7 @@ const birthdayCheck = require('./events/birthday.js');
 cron.schedule('0 0 * * *', () => {
   birthdayCheck(client);
 });
-cron("Continuous Request", "*/2 * * * *", () => {
+cron('*/2 * * * *', () => {
     console.log("running...");
 });
 
